@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>StopWatch and Clock</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1>Clocky</h1>
+        <button class="menu-open-button" class="fas fa-times">
+          <i class="fa-solid fa-bars menu-bar"></i>
+        </button>
+        <nav class="navbar">
+          <li><a href="/index.html">StopWatch</a></li>
+          <li><a href="timer.html">Timer</a></li>
+          <li><a href="/clock.html">Clock</a></li>
+          <button class="menu-close-button" class="fas fa-bars">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </nav>
+      </header>
+      <section class="bgdiv stopwatch">
+        <div class="boxdiv sw-container">
+          <h1>Timer</h1>
+          <div class="time-sw">
+            <p class="timer-p">00:00:00</p>
+          </div>
+          <span class="input-layout">
+            <form action="">
+              <div class="form-div">
+                <label for="hour">
+                  Hour
+                  <input
+                    type="number"
+                    name="hour"
+                    id="hour"
+                    max="1"
+                    min="0"
+                    maxlength="2"
+                  />
+                </label>
+
+                <label for="min"
+                  >Minute
+                  <input type="number" name="min" id="min" max="50" min="0" />
+                </label>
+
+                <label for="sec"
+                  >Second
+                  <input type="number" name="sec" id="sec" max="59" min="0" />
+                </label>
+              </div>
+            </form>
+          </span>
+          <div class="buttons">
+            <button class="start-timer">Start</button>
+            <button class="stop-timer">Stop</button>
+            <button class="reset-timer">Reset</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="timer.js"></script>
+  </body>
+</html>
