@@ -68,7 +68,7 @@ header {
   /* position: fixed; */
 }
 header h1 {
-  margin-top: 2.3rem;
+  margin-top: 1.3rem;
   text-align: center;
   cursor: pointer;
 }
@@ -408,30 +408,50 @@ body.show-menu-mobile .navbar {
 
   }
 /* Small devices (portrait phones, up to 480px) */
-@media (max-width: 480px) {
+@media (max-width: 380px) {
 
   /*stopwatch*/
 .boxdiv .buttons{
   display: flex;
   flex-direction: column;
 }
+.bgdiv{
+  padding-top: 8rem;
+  gap:10rem;
+}
+.boxdiv {
+  /* padding-top: 0; */
+  justify-content: space-around;
+}
+.boxdiv .time-sw .timer-p{
+  font-size: var(--font-2xl);
+}
+.boxdiv:nth-child(4){
+  margin-top: -3rem;
+}
+
+
   /*Timer*/
 
     .form-div label{
-      font-size: var(--font-md);
+      font-size: var(--font-base);
       display: inline-block;
     }
     .form-div input{
       margin-top: 2rem;
-      width: 8rem;
+      width: 5rem;
     }
-
-
-
+    .boxdiv{
+      padding-top: 5rem;
+    }
     .boxdiv .timer-p{
     margin-top: -3rem;
     font-size: var(--font-4xl);
   }
+  .boxdiv .buttons{
+    margin-top: -3rem;
+  }
+
 
   .input-layout form .form-div{
     width: 100%;
@@ -441,7 +461,15 @@ body.show-menu-mobile .navbar {
 
 
 
+
   /*clock*/
+  .clock-time-container{
+    margin-top: 1rem;
+    justify-content: space-evenly;
+  }
+.time-sw .clock-time{
+  margin-top: -10rem;
+}
 
 
    .time-sw .clock-time{
