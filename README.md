@@ -8,7 +8,7 @@
 A modern and minimal **Clock & Timer** web application built using **HTML, CSS, and JavaScript**.
 Stay on track with real-time clocks and simple timers — all packed into a sleek and responsive design.
 
-🔗 **Live Demo:** [clokytimer.netlify.app](https://clokytimer.netlify.app)
+🔗 **Live Demo:** [clokytimer.netlify.app](https://clockytimer.netlify.app/)
 
 ---
 
